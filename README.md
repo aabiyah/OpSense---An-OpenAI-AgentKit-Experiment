@@ -162,4 +162,4 @@ OpSense is an experimental, learning-focused project designed to explore agentic
 ## Author:
 
 Developed by Aabiyah Zehra
-[LinkedIn](https://www.linkedin.com/in/aabiyah-zehra-526528202/) | [GitHub](github.com/aabiyah)
+[LinkedIn](https://www.linkedin.com/in/aabiyah-zehra-526528202/) | [GitHub](https://www.github.com/aabiyah)
