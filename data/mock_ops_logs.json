@@ -1,0 +1,30 @@
+[
+  {
+    "date": "2025-01-01",
+    "execution_time_sec": 100,
+    "cost_usd": 2.5,
+    "failures": 0,
+    "maintenance": true
+  },
+  {
+    "date": "2025-02-01",
+    "execution_time_sec": 110,
+    "cost_usd": 2.7,
+    "failures": 0,
+    "maintenance": true
+  },
+  {
+    "date": "2025-03-01",
+    "execution_time_sec": 145,
+    "cost_usd": 3.9,
+    "failures": 1,
+    "maintenance": false
+  },
+  {
+    "date": "2025-04-01",
+    "execution_time_sec": 190,
+    "cost_usd": 5.6,
+    "failures": 2,
+    "maintenance": false
+  }
+]
