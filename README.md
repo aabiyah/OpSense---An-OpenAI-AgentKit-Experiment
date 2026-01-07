@@ -1,7 +1,7 @@
-# OPSENSE  
+# OpSense  
 An Agentic AI System for Detecting Operational Drift
 
-OPSENSE is a personal project exploring how to build **agentic systems** using **OpenAI’s AgentKit concepts**, moving beyond single-prompt LLM usage toward autonomous reasoning, tool selection, and deterministic decision-making.
+OpSense is a personal project exploring how to build **agentic systems** using **OpenAI’s AgentKit concepts**, moving beyond single-prompt LLM usage toward autonomous reasoning, tool selection, and deterministic decision-making.
 
 The system analyzes operational data, detects gradual performance or cost drift, and produces actionable optimization recommendations with clear, explainable reasoning.
 
@@ -12,7 +12,7 @@ The system analyzes operational data, detects gradual performance or cost drift,
 Most real-world systems do not fail abruptly.  
 They degrade gradually — becoming slower, more expensive, and less reliable over time.
 
-OPSENSE is designed to reason about this *operational drift* in a structured way:
+OpSense is designed to reason about this *operational drift* in a structured way:
 - Establish historical baselines
 - Compare current behavior against expectations
 - Quantify degradation
@@ -46,7 +46,7 @@ Traditional LLM usage typically follows a single-step pattern:
 - One response
 - No autonomy or decision-making
 
-OPSENSE implements an **agent loop** built on OpenAI’s Responses API that allows the model to:
+OpSense implements an **agent loop** built on OpenAI’s Responses API that allows the model to:
 - Decide whether tools are needed
 - Call tools dynamically
 - Incorporate tool outputs into reasoning
@@ -58,7 +58,7 @@ This reflects how **AgentKit-style systems** are intended to function in real-wo
 
 ## Architecture Overview
 
-OPSENSE uses a **two-phase agent controller**.
+OpSense uses a **two-phase agent controller**.
 
 ### Phase 1 — Tool-Aware Reasoning
 - The agent analyzes operational data
@@ -79,7 +79,7 @@ This design ensures:
 
 ## Tools
 
-OPSENSE currently includes deterministic tools for:
+OpSense currently includes deterministic tools for:
 - Baseline metric calculation
 - Current-state extraction
 - Execution time and cost drift computation
@@ -96,7 +96,7 @@ These tools:
 
 Below is a screenshot from a successful test run using dummy operational data:
 
-![OPSENSE Test Run](test_run.png)
+![OpSense Test Run](test_run.png)
 
 The output demonstrates:
 - Detection of operational drift
@@ -108,7 +108,7 @@ The output demonstrates:
 
 ## Why This Project Is Versatile
 
-Although OPSENSE currently operates on generic operational logs, the same agent architecture applies across multiple domains:
+Although OpSense currently operates on generic operational logs, the same agent architecture applies across multiple domains:
 
 - **FinTech**: transaction latency, retries, cost creep  
 - **HealthTech**: workflow throughput, processing delays  
@@ -141,7 +141,7 @@ The agent reasoning framework remains the same.
     export OPENAI_API_KEY=your_key_here
 3. Run the main script:
     ```bash
-    python run_opsense.py
+    python run_OpSense.py
    
 ---
 
@@ -155,7 +155,7 @@ The agent reasoning framework remains the same.
 ---
 
 ## Status:
-OPSENSE is an experimental, learning-focused project designed to explore agentic AI patterns and real-world operational reasoning using OpenAI’s AgentKit concepts.
+OpSense is an experimental, learning-focused project designed to explore agentic AI patterns and real-world operational reasoning using OpenAI’s AgentKit concepts.
 
 ---
 
