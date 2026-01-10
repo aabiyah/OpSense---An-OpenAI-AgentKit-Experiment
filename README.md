@@ -133,16 +133,46 @@ The agent reasoning framework remains the same.
 
 ## How to Run
 
+### Option 1: Docker (Recommended)
+
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` and add your OpenAI API key:
+   ```
+   OPENAI_API_KEY=your_key_here
+   ```
+
+3. Build and run with Docker Compose:
+   ```bash
+   docker-compose up --build
+   ```
+
+   Or run with Docker directly:
+   ```bash
+   docker build -t opsense .
+   docker run --env-file .env opsense
+   ```
+
+### Option 2: Local Python
+
 1. Install dependencies:
    ```bash
-   pip install --upgrade openai numpy
+   pip install -r requirements.txt
+   ```
+
 2. Set your API key:
-    ```bash
-    export OPENAI_API_KEY=your_key_here
+   ```bash
+   export OPENAI_API_KEY=your_key_here
+   ```
+
 3. Run the main script:
-    ```bash
-    python run_OpSense.py
-   
+   ```bash
+   python run_opsense.py
+   ```
+
 ---
 
 ## Design Principles:

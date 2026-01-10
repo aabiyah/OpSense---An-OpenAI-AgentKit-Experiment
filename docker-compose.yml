@@ -1,0 +1,16 @@
+services:
+  opsense:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: opsense:latest
+    container_name: opsense
+    environment:
+      # OpenAI API key - set in .env file or override here
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      # Optional: Mount data directory to use different data files
+      - ./data:/app/data:ro
+    restart: "no"
+    # Network mode for internet access
+    network_mode: bridge
